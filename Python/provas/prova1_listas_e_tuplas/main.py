@@ -1,4 +1,4 @@
-frutas = ["maca","banana","mamao","melancia","pera"]
+frutas = ["maca","banana","mamao","melancia","pera","melao"]
 print(frutas)# exibe o conteudo da lista
 print(type(frutas))# exibe o tipo deste dado
 

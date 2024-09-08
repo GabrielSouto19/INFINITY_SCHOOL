@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//      Ex04. Faça um programa que peça uma quantidade indefinida de numeros, e depois pergunte se o usuário deseja continuar. Ao final mostre a média dos numeros somados.
+// OBS: Você precisa acumular o total de numeros digitados e também a soma dos valores (2 Variaveis Acumuladoras)
+
+    let numero = Number(prompt("Digite um numero"))
+    let resposta = ""
+    let soma = 0
+    let contador = 0
+    while(resposta !="N"){
+        let numero = Number(prompt("Digite um numero"))
+        contador +=1
+        resposta = prompt("Voce deseja continuar ?")
+        soma += numero
+        
+    }
+    let media = soma/contador
+    document.writeln(`A média dos valores digitados é igual a ${media}`)
+</script>
+         
+</body>
+</html>

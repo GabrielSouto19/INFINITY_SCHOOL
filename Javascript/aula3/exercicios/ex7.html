@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// Ex07. Faça um programa que peça uma frase para o usuário, e mostre na tela quantas vogais há na frase.
+        let vogais = 0
+        let palavra = prompt("Digite uma palavra qualquer")
+        for (letra of palavra){
+            if (letra in "aeiou"){
+                document.writeln(`Esta letra é uma vogal`)
+                vogais +=1      
+            }
+        }
+        document.writeln(`O valor total de vogais contadas no nome é igual a ${vogais}`)
+
+    </script>
+    
+</body>
+</html>

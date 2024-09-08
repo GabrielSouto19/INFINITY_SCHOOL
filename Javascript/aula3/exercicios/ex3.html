@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // Ex03. Faça um programa que peça uma quantidade indefinida de numeros, e depois pergunte se o usuário deseja continuar. Ao final mostre o maior numero digitado.
+
+        let numero = 0
+        let maior_numero = 0
+        let menor_numero = undefined// 
+        let contador = 0
+        let resposta = ""
+        while(resposta !="N"){
+            resposta = prompt("Voce deseja continuar?").toUpperCase()
+            numero = Number(prompt("Digite um novo numero"))
+            if (numero > maior_numero|| contador == 0){
+                maior_numero= numero
+            
+            }
+            if (numero< menor_numero || contador == 0){
+                menor_numero = numero
+            }
+
+            contador ++
+        }
+        document.writeln(` O maior numero foi igual a ${maior_numero}`)
+
+    </script>
+    
+</body>
+</html>
